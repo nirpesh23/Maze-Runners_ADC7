@@ -2,10 +2,10 @@ from django.db import models
 
 # Create your models here.
 
-class Products(models.Model):
-    Product_Name = models.CharField(max_length=50)
-    Product_Price = models.IntegerField()
-    Product_Condition = models.CharField(max_length=50)
+class Product(models.Model):
+    Name = models.CharField(max_length=50)
+    Condition = models.CharField(max_length=50)
+    Price = models.IntegerField()
 
     def __str__(self):
-        return str(self.id)+" "+self.Product_Name+" "+self.Product_Price
+        return str(self.id) + " " + self.Name + " " + self.Price
