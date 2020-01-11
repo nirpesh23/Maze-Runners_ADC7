@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import Template,Context
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
 from .models import Product
 
 # Create your views here.
@@ -18,3 +20,5 @@ def view_sell(request):
 
 def view_buy(request):
 	return render(request,'buy.html')
+
+
