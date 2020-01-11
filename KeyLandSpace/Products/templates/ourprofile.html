@@ -9,6 +9,12 @@
   <title>About Us</title>
 
   <style>
+
+    .search{
+      margin-right:-400px;
+      padding: 10px;
+
+    }
     .dropbtn {
       background-color: #4CAF50;
       color: white;
@@ -30,6 +36,7 @@
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
+  
     
     .dropdown-content a {
       color: black;
@@ -80,8 +87,7 @@
   }
 </head>
 </style>
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<header><nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <h4>Key Land Space</h4>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -108,29 +114,26 @@
    
     
              <div class="dropdown">
-             <button class="dropbtn">Dropdown</button>
+             <li class="dropbtn active">
+             <a class="nav-link" href="catogories.html">Catogories</a>
+             </li>
               <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-               <a href="#">Link 3</a>
-               </div>
-               </div>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catogories</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown01">
                 <a class="dropdown-item" href="#">Clothes</a>
                 <a class="dropdown-item" href="#">Bikes</a>
                 <a class="dropdown-item" href="#">Books</a>
                 <a class="dropdown-item" href="#">Gadgets</a>
-              </div>
-            </li>
-          
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+               </div>
+               </div>
+         
+          <form class="Search" style="margin-right: 100px;">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search here">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>
+      </nav></header>
+<body>
+
+    
 
       <img src="/images/photo-1455849318743-b2233052fcff.jfif">
       <h4 style="text-align: center;padding: 20px; color: aliceblue;">Key Land Space is one of Nepal's greatest web based shopping site where<br> 
@@ -150,4 +153,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+<footer>
+<h6> this is our ourprofile page</h6>
+</footer>
 </html>
