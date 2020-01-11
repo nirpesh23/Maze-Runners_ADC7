@@ -8,6 +8,6 @@ urlpatterns = [
 	path('templates/catogories.html', view_catogories),
 	path('templates/sell.html', view_sell),
 	path('templates/buy.html', view_buy),
-	path('templates/upload.html', upload),
+	
 
 ]
