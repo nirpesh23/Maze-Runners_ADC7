@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" action="search" >
+        {% csrf_token %}
+        Enter Name: <input name="products_Name" type="text" > <br>
+        Enter Condition: <input name="products_Condition" type="text" > <br>
+        Enter Price: <input name="products_Price" type="number" > <br>
+    <input type="text" name="search" placeholder="Search posts"/>
+     <input type="submit"  value="Search"/>
+    </form>
+</body>
+</html>
