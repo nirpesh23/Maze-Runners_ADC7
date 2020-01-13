@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="update/{{product.id}}">
+        {% csrf_token %}
+        Name: <input name="Name" type="text" value ={{product.Name}}> <br>
+        Condition: <input name="Condition" type="text" value={{product.Condition}}> <br>
+        Price: <input name="Price" type="text" value={{product.Price}}> <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
