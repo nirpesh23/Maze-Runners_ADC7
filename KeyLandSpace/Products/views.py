@@ -8,18 +8,6 @@ from .models import Product
 
 
 # Create your views here.
-
-def view_product_page(request):
-    return render(request,'products/prouct.html')
-
-def view_product_details(request):
-    list_of_product= Product.objects.all()
-    print(list_of_product)
-    context_variable = {
-        'products':list_of_product
-    }
-    return render(request,'products/product.html',context_variable)
-
 def view_product_form(request):
     return render(request,'products/productform.html')
 
@@ -37,28 +25,20 @@ def view_productlist_save(request):
         return HttpResponse("Record Save")
 
     else:
-        return HttpResponse("Error record saving")    
+        return HttpResponse("Error record saving")
 
-def view_product_search(request):
-    return render(request,'products/productform.html')
+def view_product_page(request):
+    return render(request,'products/product.html')
 
-def viewProductDetails(request,ID):
-    products = Product.objects.get(id=ID)
-    context_varible = {'product':products}
-    return render(request,'viewproduct/productsearch.html',context_varible)
+def view_product_details(request):
+    product= Product.objects.all()
+    print(product)
+    context_variable = {
+        'products':product
+    }
+    return render(request,'products/product.html',context_variable)
 
 
-def view_search(request):
-
-    list_of_product = request.GET['search']
-    products = Product.filter(text__icontains=list_of_product)
-
-    context = {
-    'products': products,
-    'list_of_product': list_of_product
-     }
-
-    return render(request, 'products/productsearch.html', context)
 def view_homepage(request):
 	return render(request,'homepage.html')
 
@@ -85,4 +65,5 @@ def view_update_form_data_in_db(request,ID):
     product_obj.save()
 
     return HttpResponse("Record Updated!!")
+
 
