@@ -17,5 +17,4 @@ urlpatterns = [
 
      path('templates/homepage.html', view_homepage),
 	
-	 
 ]
