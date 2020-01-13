@@ -8,13 +8,14 @@
 </head>
 <body>
     <h1>List of Product</h1>
-    {% for products in Products %}
-    Products Name : {{products.Name}} <br>
-    Products  Condition : {{products.Condition}} <br>
-    Products Price : {{products.Price}}<br>
+    {% for product in products %}
+   
+     Name: {{product.Name}} <br>
+     Condition: {{product.Condition}} <br>
+     Price: {{product.Price}}<br>
     ======================================== <br>
     {% empty %}
-        Out of Stock.
+    Out of stock.
     {% endfor %}
     
     

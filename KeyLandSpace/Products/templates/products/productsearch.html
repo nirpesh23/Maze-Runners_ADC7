@@ -8,12 +8,18 @@
 </head>
 <body>
     <form method="GET" action="search" >
-        {% csrf_token %}
-        Enter Name: <input name="products_Name" type="text" > <br>
-        Enter Condition: <input name="products_Condition" type="text" > <br>
-        Enter Price: <input name="products_Price" type="number" > <br>
+       
+   
     <input type="text" name="search" placeholder="Search posts"/>
      <input type="submit"  value="Search"/>
+     
     </form>
+    {% for product in products %}
+   
+        Name: {{product.Name}} <br>
+        Condition: {{product.Condition}} <br>
+        Price: {{product.Price}}<br>
+        
+        {% endfor %} 
 </body>
 </html>
