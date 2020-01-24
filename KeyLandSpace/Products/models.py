@@ -8,4 +8,4 @@ class Product(models.Model):
     Price = models.IntegerField()
 
     def __str__(self):
-        return str(self.id) + " " + self.Name + " " + self.Price
+        return self.Name + " " + self.Price

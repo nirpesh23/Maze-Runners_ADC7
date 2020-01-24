@@ -9,9 +9,9 @@
 <body>
     <form method="POST" action="update/{{product.id}}">
         {% csrf_token %}
-        Name: <input name="Name" type="text" value ={{product.Name}}> <br>
-        Condition: <input name="Condition" type="text" value={{product.Condition}}> <br>
-        Price: <input name="Price" type="text" value={{product.Price}}> <br>
+        Update Name: <input name="Name" type="text" value ={{product.Name}}> <br>
+        Update Condition: <input name="Condition" type="text" value={{product.Condition}}> <br>
+        Update Price: <input name="Price" type="text" value={{product.Price}}> <br>
         <input type="submit">
     </form>
 </body>
